@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MediShop Uganda - About</title>
+  <title>MediShop Uganda - Products</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
       <div class="menu-toggle" id="menuToggle">☰</div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -27,10 +27,20 @@
   </header>
 
   <main>
-    <section class="about">
-      <h1>About MediShop Uganda</h1>
-      <p>We are Uganda’s leading online store for medical equipment and supplies, dedicated to providing healthcare professionals and individuals with high-quality products at affordable prices.</p>
-      <p>Our mission is to make medical equipment accessible across Kampala, Entebbe, Jinja, and beyond, with fast delivery and exceptional customer service.</p>
+    <section class="filters">
+      <h2>Filter Products</h2>
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Diagnostic">Diagnostic</option>
+        <option value="Surgical">Surgical</option>
+        <option value="Monitoring">Monitoring</option>
+        <option value="Therapeutic">Therapeutic</option>
+      </select>
+    </section>
+
+    <section class="products">
+      <h2>All Medical Equipment</h2>
+      <div class="product-grid" id="productGrid"></div>
     </section>
   </main>
 
